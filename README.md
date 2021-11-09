@@ -1,4 +1,5 @@
-Overview of Project
+##Overview of Project
+
 The purpose and background are well defined (2 pt).
 Results
 The analysis is well described with screenshots and code (4 pt).
