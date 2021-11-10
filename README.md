@@ -2,11 +2,6 @@ Module 2 Challenge
 
 ## Overview of Project
 
-
-
-
-### Purpose - Why ar we doing this?
-
 Steve was interested in knowing about the performance of thousands of stocks performance in the past couple years.  To do this, I must refactor the code created in a previous excersize to 
 account for this, and to speed up the analysis.  This is due to the increase in information that will be processed.
 
@@ -15,9 +10,11 @@ In the end we need to assess stock performance so Steve can choose which investe
 ## Results - How did we accomplish this, and what were the results.
 
 In the original script, we were examining several stocks, and doing so by looping thru the individual stocks and identifying each individual stock, then looping back thru the set to find the next.  
-Due to the detailed nature of the loop, the initial script would run between 1.6 and 2.1 seconds respectively.  After the code refactoring, the elapsed time for the script was reduced by 90%.  After the refactoring
-the code ran in 0.16 and 0.18 respectively.  The introduction of the for loop and the conditional statements created a much more efficient code, allowing for the elapsed time to complete much more effeciently, and work
-for much larger datasets.
+Due to the detailed nature of the loop, the initial script would run between 1.6 and 2.1 seconds respectively.  After the code refactoring, the elapsed time for the script was reduced significantly.  After the refactoring the code ran in roughly .4 seconds respectively.  
+
+The difference in processing speed between the two years is negligable. 
+
+The introduction of the for loop and the conditional statements created a much more efficient code, allowing for the elapsed time to complete much more effeciently, and work for much larger datasets.
 
 The sheet was formatted, much like it is after the refactoring, however the formatting doesn't appear to have impacted the elapsed time for the code to run.
 
