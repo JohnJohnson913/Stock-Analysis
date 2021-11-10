@@ -23,21 +23,21 @@ The sheet was formatted, much like it is prior the refactoring, however the form
 
 ### In Summary, what are the advantages and disadvantages that apply to refactoring the original VBA Script?
 
-What are the advantages of refactoring code:
+  What are the advantages of refactoring code:
 
 Refactoring code allows you to use what's already there.  This can be a significant time saver, allowing the developer to focus on the performance of the code as
 opposed to creating the code from scratch.  Many times it is easier to start from scratch, but if the existing code is of good quality it will allow quick and effecient insight
 to assess and modify code to desired outcome.
 
-What are the challenges of refactoring code:
+  What are the challenges of refactoring code:
 
 Like many other situations, it can be difficult to enter into something mid-stream.  Often, it can take time to get a full understanding of what the code is trying to do.  Additionally, refactoring code 
 may take an unknown amount of time, given the variables may not completely be accounted for prior to starting off.
 
-What are the advantages of refactoring VBA Script:
+  What are the advantages of refactoring VBA Script:
 
 Much like code, it's important to know that refactoring may offer time savings in that much of the work is complete.
 
-What are the challenges of refacotring VBA Script:
+  What are the challenges of refacotring VBA Script:
 
 Much like code, refactoring the scripts in VBA requires the potential to rebuild something that may not have been created effectively.   This may increase the time it takes as opposed to writing code from scratch.
