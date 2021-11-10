@@ -34,15 +34,17 @@ Sub AllStocksAnalysisRefactored()
     tickers(11) = "VSLR"
     
     'Activate data worksheet
-    Worksheets(yearValue).Activate
+    Sheets(yearValue).Activate
     
     'Get the number of rows to loop over
     RowCount = Cells(Rows.Count, "A").End(xlUp).Row
     
     '1a) Create a ticker Index
         
-        Dim tickerIndex As Long
-
+        Dim tickerIndex As Integer
+        
+        tickerIndex = 0
+         
     '1b) Create three output arrays
     
         Dim tickerVolumes(12) As Long
@@ -63,17 +65,19 @@ Sub AllStocksAnalysisRefactored()
               
         For i = 2 To RowCount
         
-        Next i
+    
     
        '3a) Increase volume for current ticker
         
-        tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
+            tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 6).Value
         
         
         '3b) Check if the current row is the first row with the selected tickerIndex.
         'If  Then
             
-          If Cells(i - 1, 1).Value <> tickers(tickersIndex) And Cells(i, 1).Value = tickers(tickerIndex) And Cells(i, 8).Value = tickers(tickerIndex) Then
+            If Cells(i - 1, 1).Value <> tickers(tickersIndex) Then
+            
+            'And Cells(i, 1).Value = tickers(tickerIndex) And Cells(i, 8).Value = tickers(tickerIndex) Then
           
             tickerStartingPrices(tickerIndex) = Cells(i, 6).Value
             
@@ -83,13 +87,15 @@ Sub AllStocksAnalysisRefactored()
          'If the next row’s ticker doesn’t match, increase the tickerIndex.
         'If  Then
             
-             If Cells(i + 1, 1).Value <> tickers(tickersIndex) And Cells(i, 1).Value = tickers(tickerIndex) And Cells(i, 6).Value = tickers(tickerIndex) Then
+             If Cells(i + 1, 1).Value <> tickers(tickersIndex) Then
+             
+             'And Cells(i, 1).Value = tickers(tickerIndex) And Cells(i, 6).Value = tickers(tickerIndex) Then
             
                 tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
                 
                 '3d Increase the tickerIndex.
              
-                       tickerIndex = tickers(i + 1)
+                       tickerIndex = tickersIndex + 1
                 
             End If
             
