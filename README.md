@@ -14,12 +14,12 @@ Due to the detailed nature of the loop, the initial script would run between 1.6
 
 The difference in processing speed between the two years is negligable. 
 
-The 2017 performance:  
-The 2018 performance:
+The 2017 performance:  https://github.com/JohnJohnson913/Stock-Analysis/blob/main/VBA_Challenge_2017.png
+The 2018 performance:  https://github.com/JohnJohnson913/Stock-Analysis/blob/main/VBA_Challenge_2018.png
 
 The introduction of the for loop and the conditional statements created a much more efficient code, allowing for the elapsed time to complete much more effeciently, and work for much larger datasets.
 
-The sheet was formatted, much like it is after the refactoring, however the formatting doesn't appear to have impacted the elapsed time for the code to run.
+The sheet was formatted, much like it is prior the refactoring, however the formatting doesn't appear to have impacted the elapsed time for the code to run.
 
 ### In Summary, what are the advantages and disadvantages that apply to refactoring the original VBA Script?
 
