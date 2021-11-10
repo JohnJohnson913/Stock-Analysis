@@ -33,3 +33,11 @@ What are the challenges of refactoring code:
 
 Like many other situations, it can be difficult to enter into something mid-stream.  Often, it can take time to get a full understanding of what the code is trying to do.  Additionally, refactoring code 
 may take an unknown amount of time, given the variables may not completely be accounted for prior to starting off.
+
+What are the advantages of refactoring VBA Script:
+
+Much like code, it's important to know that refactoring may offer time savings in that much of the work is complete.
+
+What are the challenges of refacotring VBA Script:
+
+Much like code, refactoring the scripts in VBA requires the potential to rebuild something that may not have been created effectively.   This may increase the time it takes as opposed to writing code from scratch.
